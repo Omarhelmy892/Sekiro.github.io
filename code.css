@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    
+}
+
+
+.navbar ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0D0D0D;
+    text-align: center;
+    height: 50px;
+}
+
+.navbar li {
+    display: inline-block;
+    color: #A6A6A6;
+    font-size: larger;
+    list-style: none;
+    padding: 10px 20px;
+    margin-top: 5px;
+    font-family: "Sawarabi Gothic", sans-serif;
+    letter-spacing: 0.5px; 
+    position: relative;
+    
+
+}
+
+.navbar li:hover {
+    background-color: #262626;
+    text-shadow: 0 0 2px #752424;
+    cursor: pointer;
+    
+}
+.navbar li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 4px;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0); 
+}
+.navbar li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+.content {
+    display: flex;           
+    height: calc(100vh - 50px); /* max height - navabar height */
+    GAP:10px;
+}
+
+
+.image-container {
+    flex: 1.2;                
+    overflow: hidden;        
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       
+}
+
+
+.text-container {
+    flex: 1;                 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: #1a2238;     
+    
+}
+
+.text-container h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: "Kozuka Mincho Pro", "MS Mincho", serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.text-container p {
+    font-family: "Sawarabi Mincho", sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.content2{
+    display: flex;
+    flex-direction: row-reverse;           
+    height: calc(100vh - 50px); /* max height - navabar height */
+    GAP:10px;
+
+}
+
+.text-container2{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a2238;
+    border-bottom:5px solid black ;
+}
+.image-container2 {
+    flex: 1.2;                
+    overflow: hidden;        
+}
+
+.image-container2 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #3A2C1F   
+}
+
+.text-container2 h1 {
+    color: #000;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: "Kozuka Mincho Pro", serif;
+    color: #FFD700;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.text-container2 p {
+    font-family: "Sawarabi Mincho", sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #bea516;
+    font-weight: bold;
+}
+.buy{
+  width: 200px;
+  height: 55px;
+  background: #990000; 
+  color: #ddcc0b; 
+  border: 2px solid #C0C0C0; 
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 7px;
+}
+
+.buy:hover {
+  background: #800000; 
+  text-shadow: 0 0 5px #FFD700; 
+  transform: translateY(-2px); 
+  box-shadow: 0 0 15px #FFD700;
+}
+.buy:active {
+  transform: translateY(1px); 
+}
+
+.fun{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fun button{
+    width: 100px;
+    height: 37px;
+    background-color: #321aa8;
+    cursor: pointer;
+    margin:10px;
+    color:white;
+    border-radius: 9px;
+
+}
+.footer{
+    overflow: hidden;
+    background-color: #324d5a;
+    color:white;
+    text-align: center;
+}
+.sys{
+    overflow: hidden;
+    background: #1a2238; 
+    padding: 30px 15px
+}
+.sys h2{
+  color: #FFD700;
+  font-family: "Kozuka Mincho Pro";
+  text-shadow: 0 0 5px #990000;
+  text-align: center;
+  
+}
+.requirments{
+    width: 80%;
+    margin: 20px auto;
+    align-items: center;
+    border: 3px solid black;
+    background: #1A1A1A;
+    color: #E6E6E6;
+   
+}
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding:10px;
+}
+th{
+    background: #990000;
+    color: #FFD700;
+    font-family: "Sawarabi Gothic";
+}
+td{
+      background: #0D0D0D;
+      border-color: #3A2C1F;
+}
+.slider{
+    padding-top:20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    
+}
+.mentions{
+    overflow: hidden;
+    background-color: #000;
+}
+.mentions h1{
+    text-align: center;
+    color: white;
+}
+.desc{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.form{
+    position: relative;
+    text-align: center;
+}
+.form input,textarea{
+    background-color:#0087ca;
+
+}
+
+.form button{
+  width: 200px;
+  height: 55px;
+  background: #0c27a9; 
+  color: #ddcc0b; 
+  border: 2px solid #C0C0C0; 
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 7px;
+
+}
+.form-container {
+    padding: 40px 20px;
+    background-color: #44778e;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-family: "Sawarabi Gothic", sans-serif;
+    color: #1a1a1a;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #c6b2b2;
+    font-family: "Sawarabi Gothic", sans-serif;
+    resize: vertical;
+    font-size: 14px;
+}
+
+.form button {
+    width: 100%;
+    height: 50px;
+    background: #0c27a9;
+    color: #FFD700;
+    border: none;
+    font-size: 16px;
+    font-family: "Sawarabi Gothic", sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #071b73;
+    box-shadow: 0 0 10px #FFD700;
+}
+.form p {
+    color:#0c27a9;
+    font-family: Arial, Helvetica, sans-serif;
+}
